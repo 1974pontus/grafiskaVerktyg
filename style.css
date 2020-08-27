@@ -1,5 +1,216 @@
+/* GENERAL */
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Krungthep;
+}
+p {
+  font-size: 11px;
+  font-family: courier;
+}
+h1 {
+    font-size: 29px;
+}
+h2 {
+    font-size: 18px;
+}
+
+/* HEADER */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.header ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 0rem 3rem;
+}
+
+.logo {
+  margin-left: 2rem;
+  padding-top: 1rem;
+}
+
+/* HERO */
+
+.hero {
+  position: relative;
+}
+
+.bgImage {
+  height: 600px;
+  background-image: url(./image/barrels\ copy2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+}
+
+.bigLogo {
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ABOUT */
+
+.about {
+  display: flex;
+  position: relative;
+  height: 500px;
+}
+
+.russians {
+  width: 50%;
+  background-image: url(./image/ryssar.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.textbox {
+  width: 50%;
+  background-color: black;
+}
+
+.textAbout {
+  padding: 7rem;
+  color: white;
+}
+
+/* PRODUCTS */
+
+.products {
+  display: flex;
+  position: relative;
+  height: 500px;
+}
+
+.bottle {
+  width: 40%;
+  background-image: url(./image/desktopBottle.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bottletext {
+  padding-left: 40%;
+  padding-right: 5rem;
+  padding-top: 10rem;
+}
+
+.tshirt {
+  width: 60%;
+  background-image: url(./image/desktopTee.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.teetext {
+  padding-left: 60%;
+  padding-right: 5rem;
+  padding-top: 6rem;
+}
+
+/* FOOTER */
+
+.footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+.footer ul li{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 11px;
+}
+.footer {
+  background-color: #555;
+  color: #bbb;
+  line-height: 1.5;
+}
+.footer a {
+  text-decoration: none;
+  color: #eee;
+}
+.a:hover {
+  text-decoration: underline;
+}
+.ft-title {
+  color: #fff;
+  padding-bottom: 0.625rem;
+}
+
+.ft-main {
+  padding: 1.25rem 1.875rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.ft-main-item {
+    padding: 1.25rem;
+    min-width: 12.5rem;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+input[type="email"] {
+    border: 0;
+    padding: 0.625rem;
+    margin-top: 0.3125rem;
+}
+input[type="submit"] {
+    background-color: #00d188;
+    color: #fff;
+    cursor: pointer;
+    border: 0;
+    padding: 0.625rem 0.9375rem;
+    margin-top: 0.3125rem;
+}
+
+/* FOOTER ICONS */
+
+.ft-social {
+    padding: 0 2rem 1.5rem;
+}
+.ft-social-list {
+    display: flex;
+    justify-content: center;
+    border-top: 1px #777 solid;
+    padding-top: 1.25rem;
+}
+.ft-social-list li {
+    margin: 0.8rem;
+    font-size: 1.25rem;
+}
+
+
+
+/*  MEDIA QUERRIES */
+
+@media only screen and (min-width: 29.8125rem /* 477px */) {
+  .ft-main {
+    justify-content: space-evenly;
+  }
+}
+@media only screen and (min-width: 77.5rem /* 1240px */) {
+  .ft-main {
+    justify-content: space-evenly;
+  }
 }

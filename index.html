@@ -1,70 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>grafiska verktyg</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
     <div class="header">
-        header
-        
+      <div>
+        <h1 class="logo">
+          <a href="#"
+            ><img src="./image/logo-1.png" height="80px" alt="logo"
+          /></a>
+        </h1>
+      </div>
+
+      <ul>
+        <li><a href="#">GALLERY</a></li>
+        <li><a href="#">PRODUCT</a></li>
+        <li><a href="#">CONTACT</a></li>
+        <li><a href="#">ABOUT</a></li>
+      </ul>
     </div>
+
     <div class="hero">
-        Hero
-        <div class="bigLogo">
-            bigLogo
-        </div>
+      <div class="bgImage"></div>
+      <div class="bigLogo">
+        <img src="./image/logoFix.png" alt="big logo" />
+      </div>
     </div>
+
     <div class="about">
-        <div class="russians">
-            Image
-        </div>
+      <div class="russians"></div>
+      <div class="textbox">
         <div class="textAbout">
-            Text about
+          <h1>PARTY PROGRAM</h1>
+          <br />
+          <h2>Democracy i the truest sense!</h2>
+          <br />
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            <br />
+            Porro inventore perspiciatis repudiandae saepe placeat ab, totam
+            quis exercitationem veniam omnis rerum nostrum repellendus esse
+            dolor aliquam mollitia sint illo nihil.
+          </p>
         </div>
-        <div class="products">
-            <div class="bottle">
-                bottleimageBg
-                bottletext
-            </div>
-            <div class="tshirt">
-                tshirtText
-                tshirtimageBG
-            </div>
-        <div class="footer">
-            <div class="info1">
-                <ul>
-                    <li>info1</li>
-                </ul>
-            </div>
-            <div class="info2">
-                <ul>
-                    <li>info2</li>
-                </ul>
-            </div>
-            <div class="info3">
-                <ul>
-                    <li>info3</li>
-                </ul>
-            </div>
-            <div class="info4">
-                <ul>
-                    <li>info4</li>
-                </ul>
-            </div>
-            <div class="iconmeu">
-                <ul>
-                    <li>icon</li>
-                    <li>icon</li>
-                    <li>icon</li>
-                    <li>icon</li>
-                </ul>
-            </div>
-        </div>
+      </div>
     </div>
-    
+
+    <div class="products">
+      <div class="bottle">
+        <div class="bottletext">
+          <h2>Russian Lager!</h2>
+          <br />
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing.
+            <br />
+            Porro inventore perspiciatis saepe placeat ab, totam quis
+            exercitationem repellendus esse dolor.
+            <br /><br />
+            12kr/flaska.
+          </p>
+        </div>
+      </div>
+
+      <div class="tshirt">
+        <div class="teetext">
+          <h2>Get the T-shirt!</h2>
+          <br />
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            <br />
+            Porro inventore perspiciatis repudiandae saepe placeat ab, totam
+            quis
+            <br />
+            <br />
+            150kr.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <section class="ft-main">
+        <div class="ft-main-item">
+          <h2 class="ft-title">About</h2>
+          <ul>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Customers</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+        <div class="ft-main-item">
+          <h2 class="ft-title">Resources</h2>
+          <ul>
+            <li><a href="#">Docs</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">eBooks</a></li>
+            <li><a href="#">Webinars</a></li>
+          </ul>
+        </div>
+        <div class="ft-main-item">
+          <h2 class="ft-title">Contact</h2>
+          <ul>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Sales</a></li>
+            <li><a href="#">Advertise</a></li>
+          </ul>
+        </div>
+        <div class="ft-main-item">
+          <h2 class="ft-title">Stay Updated</h2>
+          <p>Subscribe to our newsletter to get our latest news.</p>
+          <form>
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter email address"
+            />
+            <input type="submit" value="Subscribe" />
+          </form>
+        </div>
+      </section>
+      <section class="ft-social">
+        <ul class="ft-social-list">
+          <li>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </li>
+        </ul>
+      </section>
+    </div>
+
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

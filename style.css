@@ -14,10 +14,11 @@ p {
   font-family: courier;
 }
 h1 {
-    font-size: 29px;
+  font-size: 29px;
+  color: rgb(146, 39, 39);
 }
 h2 {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 /* HEADER */
@@ -25,6 +26,11 @@ h2 {
 .header {
   display: flex;
   justify-content: space-between;
+  height: 100px;
+}
+
+.icon {
+  padding: 2rem;
 }
 
 .header ul {
@@ -43,6 +49,7 @@ h2 {
 .logo {
   margin-left: 2rem;
   padding-top: 1rem;
+  height: 85px;
 }
 
 /* HERO */
@@ -77,14 +84,14 @@ h2 {
 }
 
 .russians {
-  width: 50%;
+  flex: 1;
   background-image: url(./image/ryssar.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .textbox {
-  width: 50%;
+  flex: 1;
   background-color: black;
 }
 
@@ -102,7 +109,7 @@ h2 {
 }
 
 .bottle {
-  width: 40%;
+  flex: 1;
   background-image: url(./image/desktopBottle.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -116,7 +123,7 @@ h2 {
 }
 
 .tshirt {
-  width: 60%;
+  flex: 1;
   background-image: url(./image/desktopTee.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -135,12 +142,12 @@ h2 {
   list-style: none;
   padding-left: 0;
 }
-.footer ul li{
-  font-family: 'Courier New', Courier, monospace;
+.footer ul li {
+  font-family: "Courier New", Courier, monospace;
   font-size: 11px;
 }
 .footer {
-  background-color: #555;
+  background-color: rgb(39, 39, 39);
   color: #bbb;
   line-height: 1.5;
 }
@@ -162,55 +169,127 @@ h2 {
   flex-wrap: wrap;
 }
 .ft-main-item {
-    padding: 1.25rem;
-    min-width: 12.5rem;
+  padding: 1.25rem;
+  min-width: 12.5rem;
 }
 
 form {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 input[type="email"] {
-    border: 0;
-    padding: 0.625rem;
-    margin-top: 0.3125rem;
+  border: 0;
+  padding: 0.625rem;
+  margin-top: 0.3125rem;
 }
 input[type="submit"] {
-    background-color: #00d188;
-    color: #fff;
-    cursor: pointer;
-    border: 0;
-    padding: 0.625rem 0.9375rem;
-    margin-top: 0.3125rem;
+  background-color: #00d188;
+  color: #fff;
+  cursor: pointer;
+  border: 0;
+  padding: 0.625rem 0.9375rem;
+  margin-top: 0.3125rem;
 }
 
 /* FOOTER ICONS */
 
 .ft-social {
-    padding: 0 2rem 1.5rem;
+  padding: 0 2rem 1.5rem;
 }
 .ft-social-list {
-    display: flex;
-    justify-content: center;
-    border-top: 1px #777 solid;
-    padding-top: 1.25rem;
+  display: flex;
+  justify-content: center;
+  border-top: 1px #777 solid;
+  padding-top: 1.25rem;
 }
 .ft-social-list li {
-    margin: 0.8rem;
-    font-size: 1.25rem;
+  margin: 0.8rem;
+  font-size: 1.25rem;
 }
 
+/*  MEDIA QUERIES */
 
-
-/*  MEDIA QUERRIES */
-
-@media only screen and (min-width: 29.8125rem /* 477px */) {
+@media only screen and (min-width: 64rem /* 1024px */) {
   .ft-main {
     justify-content: space-evenly;
   }
 }
-@media only screen and (min-width: 77.5rem /* 1240px */) {
+
+@media only screen and (min-width: 40rem /* 640px */) {
   .ft-main {
     justify-content: space-evenly;
+  }
+  .icon {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 64rem /* 1024px */) {
+  .ft-main {
+    justify-content: space-evenly;
+  }
+  .header ul li a {
+    font-size: 15px;
+    padding: 0rem 1rem;
+  }
+  .logo {
+    margin-left: 1.7rem;
+    padding-top: 1.5rem;
+    height: 75px;
+  }
+}
+
+@media only screen and (max-width: 41.75rem /* 668px */) {
+  .ft-main {
+    justify-content: space-evenly;
+  }
+  .header ul {
+    display: none;
+  }
+  .icon {
+    display: inline-block;
+  }
+  .logo {
+    margin-left: 1.4rem;
+    padding-top: 1.5rem;
+    height: 70px;
+  }
+  .about {
+    flex-wrap: wrap;
+    height: 1000px;
+  }
+  .russians {
+    flex-basis: 100%;
+    height: 500px;
+  }
+  .textbox {
+    height: 500px;
+  }
+  .textAbout {
+    padding: 5rem;
+  }
+
+  .products {
+    flex-wrap: wrap;
+    height: 800px;
+  }
+  .bottle {
+    flex-basis: 100%;
+    height: 400px;
+  }
+  .bottletext {
+    padding-left: 50%;
+    padding-right: 2rem;
+
+    padding-top: 4rem;
+  }
+  .tshirt {
+    /* width: 100vw; */
+    height: 400px;
+  }
+  .teetext {
+    padding-left: 60%;
+    padding-right: 2rem;
+    padding-top: 4rem;
   }
 }

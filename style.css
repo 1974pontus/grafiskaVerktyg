@@ -51,6 +51,7 @@ h2 {
   margin-left: 2rem;
   padding-top: 1rem;
   height: 85px;
+  filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
 }
 
 /* HERO */
@@ -74,6 +75,7 @@ h2 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
 }
 
 /* ABOUT */
